@@ -167,4 +167,11 @@ public class Player : MonoBehaviour {
 		}
 		//print ("collide!");
 	}
+
+	void OnTriggerEnter2D(Collider2D coll) {
+		if (coll.name == "Void") {
+			print ("You fall down");
+			Application.LoadLevel (Application.loadedLevel);
+		}
+	}
 }

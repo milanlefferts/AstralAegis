@@ -28,6 +28,7 @@ public class Switch : MonoBehaviour {
 
 	void ActivateSwitch () {
 		activated = true;
+		GetComponent<SpriteRenderer> ().enabled = false;
 		// switch color to ACTIVE
 	}
 }
